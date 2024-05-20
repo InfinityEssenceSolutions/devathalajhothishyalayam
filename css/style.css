@@ -21,6 +21,16 @@ a{
     color: #6f6f6f;
 }
 
+.img-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .img-container img {
+    width: 200px;
+    border-radius: 20px;
+    height: 200px;
+  }
+
 a,
 a:active,
 a:focus,
