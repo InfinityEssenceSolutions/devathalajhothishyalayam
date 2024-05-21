@@ -26,9 +26,9 @@ a{
     margin-bottom: 20px;
   }
   .img-container img {
-    width: 200px;
+    width: 100%;
     border-radius: 20px;
-    height: 200px;
+    height: 260px;
   }
 
 a,
@@ -61,6 +61,7 @@ h1{
     color: #c90914;
     text-align: center;
 font-family: 'Signika', sans-serif;
+line-height: normal;
 }
 
 h2{
@@ -91,10 +92,23 @@ h6{
 p{
     margin-bottom:20px;text-align:justify;
 }
-
+.text-dark{
+    color: #000000;
+}
+@media(max-width:568px){
+    .abtimg{
+        padding: 10px;
+    }
+}
 .section{
     padding: 70px 0;
     position: relative;
+}
+.about-bg{
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /*
@@ -124,8 +138,8 @@ ul.cart-list > li.total > .btn{
 
     nav.navbar .navbar-brand img.logo{
 
-        height: 80px;
-        width: 20px;
+        height: 100px;
+        /* width: 20px; */
         margin-top: 5px;
     }
 
@@ -213,7 +227,7 @@ ul.cart-list > li.total > .btn{
 
     nav.navbar .navbar-brand img.logo{
             width: 70px;
-    margin-top: -11px;
+    margin-top: -18px;
     }
 
     .attr-nav > ul > li > a{
@@ -1281,4 +1295,48 @@ background-color: #ffbc13;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border: 5px solid red;
     padding: 5px;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio (16:9) */
+    height: 0;
+    overflow: hidden;
+    border-radius: 52px 0px;
+    margin: 5px;
+}
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+/* @media (min-width:992px){
+    .video-container video {
+        height: 400px !important;
+
+    }
+} */
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex-box .item {
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.gallery-img {
+    width: 100%;
+    height: 350px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery-img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
