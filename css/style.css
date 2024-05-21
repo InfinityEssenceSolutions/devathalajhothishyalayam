@@ -1273,6 +1273,30 @@ background-color: #ffbc13;
    color: yellow;
    font-size: large;
 }
+
+.raju{
+    display:flex;
+    justify-content: center;
+}
+
+.highlight {
+    animation: shine 2s infinite;
+}
+
+@keyframes shine {
+    0% {
+        color: #0f0e0e;
+        text-shadow: 0 0 5px #0f0e0e;
+    }
+    50% {
+        color: #530202; /* Change this to the desired shining color */
+        text-shadow: 0 0 20px #530202; /* Adjust the shadow size as needed */
+    }
+    100% {
+        color: #0f0e0e;
+        text-shadow: 0 0 5px #0f0e0e;
+    }
+}
 .service-text{
     align-items: center;
     text-align: center;
